@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<body>
+
+<h2>school timetable</h2>
+<table style="width:100%">
+<tr>
+<th colspan="6">day</th>
+</tr>
+<tr>
+<th rowspan="5">subjects</th>
+    <td>monday</td>
+    <td>tuesday</td>
+    <td>wednesday</td>
+    <td>thursday</td>
+    <td>friday</td>
+    </tr>
+    <td>drama</td>
+    <td>math</td>
+    <td>science</td>
+    <td>social</td>
+    <td>pe</td>
+    </tr>
+    <td>math</td>
+    <td>drama</td>
+    <td>social</td>
+    <td>pe</td>
+    <td>science</td>
+    </tr>
+    <tr>
+        <th colspan="5">lunch</th>
+        
+    </tr>
+    <tr>
+        <td>math</td>
+        <td>drama</td>
+        <td>social</td>
+        <td>pe</td>
+        <td>science</td>  
+     </tr>
+        
+
+</table>
+
+  
+  <h2>Calculator</h2>
+    
+<script>
+  function add(){
+  x =parseInt(f1.tb1.value)
+  y =parseInt(f1.tb2.value)
+  z = x+y 
+  
+  }
+  
+  function sub(){
+  z = x-y
+  document.getElementById('tb3').value=z;
+  
+  }
+  
+  function mul(){
+      z = x*y
+  document.getElementById('tb3').value=z;
+  
+  }
+  
+  function div(){
+  z = x/y  
+  document.getElementById('tb3').value=z;
+  
+  }
+  
+  function mod(){
+  z = x%y
+  document.getElementById('tb3').value=z;
+  }
+  </script>
+ 
+  <form id="f1">
+  Enter 1st value : <input type="text" id="tb1"><br>
+  Enter 2nt value : <input type="text" id="tb2"><br>
+  <button type="button" onclick="add()">addition</button>
+  <button type="button" onclick="sub()">subtraction</button>
+  <button type="button" onclick="mul()">multiplication</button>
+  <button type="button" onclick="div()">division</button>
+  <button type="button" onclick="mod()">modulo</button><br>
+  result <input type="text" id="tb3">
+  </form>
+  </body>
+  </html>
